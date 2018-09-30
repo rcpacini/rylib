@@ -1,2 +1,2 @@
-# Ry.Snippets
-VIs of tips, tricks and snippets.
+# ry.snippet
+VI tip, tricks and code snippets.

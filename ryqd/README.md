@@ -1,4 +1,4 @@
-# Quick Drop
+# ry.qd (Quick Drop)
 Quick Drop is a build-in LabVIEW plugin to speed up development by using keyboard shortcuts to add functions and execute macros. Rather than navigating through right-click palettes, Quick Drop allows you to add functions to the diagram or panel quickly by name.
 
 To use Quick Drop, press `Ctrl-Space` from a VI's __Front Panel__ or __Block Diagram__ and type in the function name then press enter to place it on the diagram. 
