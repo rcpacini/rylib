@@ -1,101 +1,49 @@
-# rylib
+# ry.lib
 LabVIEW Toolkits for Developers
 
-Author: __Ryan P.__
+## What is LabVIEW?
+[Laboratory Virtual Instrument Engineering Workbench (LabVIEW)](http://www.ni.com/en-us/shop/labview.html) is a system-design platform and development environment for a visual programming language from [National Instruments](https://www.ni.com). 
 
-## LabVIEW Environment Setup
+LabVIEW integrates the creation of user interfaces into the development cycle. LabVIEW programs subroutines are termed __Virtual Instruments (VIs)__. Each VI has three components: a __Block Diagram__, a __Front Panel__, and a __Connector Panel__. The last is used to represent the VI in the block diagrams of other, calling VIs. [Wikipedia](https://en.wikipedia.org/wiki/LabVIEW)
 
+## What is ry.lib?
+The __ry.lib__ repository contains open sourced LabVIEW toolkits and add-ons for large application development during my career as a [Certified LabVIEW Architect (CLA)](http://sine.ni.com/nips/cds/view/p/lang/en/nid/13477).
 
+Projects:
+1. [Ry.Lib](https://github.com/rcpacini/rylib/rylib) (homage to LabVIEW's __vi.lib__) contain standard libraries built for advanced application development. These libraries are extensions of LabVIEW's vi.lib to handle basic functionality every application needs: multi-threading, multiple user interfaces, periodic messaging, error logging and hardware abstraction.
 
-## Quick Drop
-Quick Drop is a build-in LabVIEW plugin to speed up development by using keyboard shortcuts to add functions and execute macros. Rather than navigating through right-click palettes, Quick Drop allows you to type the name of the functions to add the node to the panel or diagram.
-To use Quick Drop, press `Ctrl-Space` from a VIs __Front Panel__ or __Block Diagram__ and type in the function name then press enter to place it on the diagram. 
+2. [Ry.QD](https://github.com/rcpacini/rylib/ryqd) (Quick Drop) contain macros for faster LabVIEW development. These tools speed up common tasks within the LabVIEW environment such as, changing data type representations, resizing diagram content, re-aranging terminals and modifying node attributes.
 
-Here are the Quick Drop Shortcuts I use. This list is compiled from analyzing multiple projects by most comonly used functions.
+## Getting Started
+1. [Install LabVIEW 2017](http://www.ni.com/en-us/shop/labview/download.html) (or later)
+2. Download the Ry.Lib VI Packages [here](https://github.com/rcpacini/rylib/builds)
+3. Install the VI Packages using [VI Package Manager](https://vipm.jki.net/) (installed with LabVIEW)
+4. Refer to the Ry.Lib toolkit and add-on help documentation [here](https://github.com/rcpacini/rylib/docs)
 
-### Front Panel Shortcuts
-* ac:Array;
-* b:Push Button;
-* bb:Round LED;
-* c:Cluster;
-* dbl:Numeric Control;
-* en:Enum;
-* er:Error In 3D.ctl;
-* err:Error Out 3D.ctl;
-* p:File Path Control;
-* sb:System Cancel Button;
-* sbb:System Checkbox;
-* sdbl:System Numeric;
-* sp:System Path Control;
-* sstr:System String;
-* str:String Control;
+### LabVIEW Environment Setup
+These are the recommended LabVIEW environment options to setup from `Tools > Options...`
 
-### Block Diagram Shortcuts
-* !=:Not Equal?;
-* !=0:Not Equal To 0?;
-* ':Empty String/Path?;
-* <:Less?;
-* <0:Less Than 0?;
-* <=:Less Or Equal?;
-* <=0:Less Or Equal To 0?;
-* =:Equal?;
-* =0:Equal To 0?;
-* >:Greater?;
-* >0:Greater Than 0?;
-* >=:Greater Or Equal?;
-* >=0:Greater Or Equal To 0?;
-* []:Empty Array?;
-* a:Build Array;
-* aa:Index Array;
-* ac:Array Constant;
-* ad:Delete From Array;
-* ai:Initialize Array;
-* ains:Insert Into Array;
-* ar:Replace Array Subset;
-* as:Array Size;
-* asub:Array Subset;
-* b:Bundle By Name;
-* bb:False Constant;
-* bu:Bundle;
-* c:Cluster Constant;
-* case:Case Structure;
-* dbl:Numeric Constant;
-* event:Event Structure;
-* f:Format Into String;
-* feed:Feedback Node;
-* for:For Loop;
-* fs:Flatten To String;
-* i:Invoke Node;
-* mer:Merge Errors;
-* nan:Not A Number/Path/Refnum?;
-* p:Property Node;
-* s:Scan From String;
-* se:Select;
-* str:String Constant;
-* t1:To Byte Integer;
-* t2:To Word Integer;
-* t3:To Long Integer;
-* t4:To Quad Integer;
-* tc:Type Cast;
-* tdbl:To Double Precision Float;
-* text:To Extended Precision Float;
-* tsgl:To Single Precision Float;
-* tt1:To Unsigned Byte Integer;
-* tt2:To Unsigned Word Integer;
-* tt3:To Unsigned Long Integer;
-* tt4:To Unsigned Quad Integer;
-* u:Unbundle By Name;
-* un:Unbundle;
-* unf:Unflatten From String;
-* var:Variant To Data;
-* while:While Loop;
-
-### Quick Drop - LabVIEW.ini
-Replace the following keys in the __<LabVIEW Install>\LabVIEW.ini__ configuration file.
-```
-[LabVIEW]
-
-QuickDropDiagramShortcuts="!=:Not Equal?;!=0:Not Equal To 0?;':Empty String/Path?;<:Less?;<0:Less Than 0?;<=:Less Or Equal?;<=0:Less Or Equal To 0?;=:Equal?;=0:Equal To 0?;>:Greater?;>0:Greater Than 0?;>=:Greater Or Equal?;>=0:Greater Or Equal To 0?;[]:Empty Array?;a:Build Array;aa:Index Array;ac:Array Constant;ad:Delete From Array;ai:Initialize Array;ains:Insert Into Array;ar:Replace Array Subset;as:Array Size;asub:Array Subset;b:Bundle By Name;bb:False Constant;bu:Bundle;c:Cluster Constant;case:Case Structure;dbl:Numeric Constant;event:Event Structure;f:Format Into String;feed:Feedback Node;for:For Loop;fs:Flatten To String;i:Invoke Node;mer:Merge Errors;nan:Not A Number/Path/Refnum?;p:Property Node;s:Scan From String;se:Select;str:String Constant;t1:To Byte Integer;t2:To Word Integer;t3:To Long Integer;t4:To Quad Integer;tc:Type Cast;tdbl:To Double Precision Float;text:To Extended Precision Float;tsgl:To Single Precision Float;tt1:To Unsigned Byte Integer;tt2:To Unsigned Word Integer;tt3:To Unsigned Long Integer;tt4:To Unsigned Quad Integer;u:Unbundle By Name;un:Unbundle;unf:Unflatten From String;var:Variant To Data;while:While Loop;"
-
-QuickDropPanelShortcuts="ac:Array;b:Push Button;bb:Round LED;c:Cluster;dbl:Numeric Control;en:Enum;er:Error In 3D.ctl;err:Error Out 3D.ctl;p:File Path Control;sb:System Cancel Button;sbb:System Checkbox;sdbl:System Numeric;sp:System Path Control;sstr:System String;str:String Control;"
-```
+Category:
+* Front Panel >
+ * Use numbers in icons of new VIs (1 through 9): `unchecked`
+* Block Diagram >
+ * Place front panel terminals as icons: `unchecked`
+ * Auto-insert Feedback Nodes in cycles: `unchecked`
+ * Default label position: control terminals and constants: `Left-middle`
+ * Default label position: indicators: `Right-middle`
+ * Enable automatic wire routing: `unchecked`
+ * Enable auto wiring: `unchecked`
+ * Show red Xs on broken wires: `unchecked`
+ * Enable automatic error handling in new VIs: `unchecked`
+ * Enable automatic error handling dialogs: `unchecked`
+* Controls/Functions Palettes >
+ * Load palettes during launch: `checked`
+* Environment >
+ * Seperate compiled code from new files: `checked`
+* Paths >
+ * Default Data Directory - change to '..\LV20xx'
+* VI Server >
+ * TCP/IP: `checked`
+ * Port: `3363`
+ * Show VI Scripting functions, properties and methods: `checked`
+ * Disaply additional VI Scripting information in Context Help window: `checked`
