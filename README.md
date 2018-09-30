@@ -10,9 +10,9 @@ LabVIEW's "G" code is a combination of node/wire connections contained in a __Vi
 __ry.lib__ is a collection of open sourced LabVIEW toolkits and add-ons for large scale applications. These libraries were developed from best practices during my career as a [Certified LabVIEW Architect (CLA)](http://sine.ni.com/nips/cds/view/p/lang/en/nid/13477).
 
 Projects:
-1. [Ry.Lib](https://github.com/rcpacini/rylib/rylib) (homage to LabVIEW's __vi.lib__) contain standard libraries built for advanced application development. These libraries are extensions of LabVIEW's vi.lib to handle basic functionality every application needs: multi-threading, multiple user interfaces, periodic messaging, error logging and hardware abstraction.
+1. [Ry.Lib](https://github.com/rcpacini/rylib/tree/master/rylib)(homage to LabVIEW's __vi.lib__) contain standard libraries built for advanced application development. These libraries are extensions of LabVIEW's vi.lib to handle basic functionality every application needs: multi-threading, multiple user interfaces, periodic messaging, error logging and hardware abstraction.
 
-2. [Ry.QD](https://github.com/rcpacini/rylib/ryqd) (Quick Drop) contain macros for faster LabVIEW development. These tools speed up common tasks within the LabVIEW environment such as, changing data types, resizing diagram content, re-aranging terminals and modifying node attributes.
+2. [Ry.QD](https://github.com/rcpacini/rylib/tree/master/ryqd) (Quick Drop) contain macros for faster LabVIEW development. These tools speed up common tasks within the LabVIEW environment such as, changing data types, resizing diagram content, re-aranging terminals and modifying node attributes.
 
 ## Getting Started
 1. [Install LabVIEW 2017](http://www.ni.com/en-us/shop/labview/download.html) (or later)
